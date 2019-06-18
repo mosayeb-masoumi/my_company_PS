@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryLight">#9e9e9e</color>
+    <color name="colorAccentLight">#3b3b3b</color>
+    <color name="colorPrimary">#00695C</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="colorNavy">#003366</color>
+    <color name="colorAccentDark">#000000</color>
+    <color name="colorTextLight">#FFFFFF</color>
+    <color name="colorText">#757575</color>
+    <color name="colorTextDark">#212121</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorTextIcon">#ffffff</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorsecondarytext">#757575</color>
+    <color name="primaryBackgroundColor">#FAFAFA</color>
+    <color name="CardViewBackgroundColor">#F5F5F5</color>
+
+    <color name="titleColor">#D9000000</color>
+    <color name="DescriptionColor">#8C000000</color>
+
+    <color name="layoutBackGroundColor">#ffffff</color>
+
+
+
+
+</resources>

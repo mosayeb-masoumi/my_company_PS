@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="end"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtstaticTrip"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="سفر "/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTripReasonAlertWaitingDriverTabLayout"
+                        android:layout_toLeftOf="@+id/txtstaticTrip"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:text="اداری "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/colon"
+                          android:layout_marginTop="3dp"
+                          android:textColor="#000000"
+                          android:layout_toLeftOf="@+id/txtTripReasonAlertWaitingDriverTabLayout"
+                          android:text=" : "/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="18sp"
+                        android:textColor="#003366"
+                        android:id="@+id/txtPersuateCodeAlertWaitingDriverTabLayout"
+                        android:layout_toLeftOf="@+id/colon"
+                        android:text="4511"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/rlDeleteInflateAlertWaitingDriverTabLayout"
+                    android:layout_alignParentEnd="true">
+
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_marginStart="15dp"
+                           android:id="@+id/imgDeleteInflateAlertWaitingDriverTabLayout"
+                           android:src="@drawable/ic_delete"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgStarAlertWaitingDriverTabLayout"
+                    android:layout_alignParentStart="true"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="2dp"
+                      android:textColor="#000000"
+                      android:layout_toLeftOf="@+id/imgStarAlertWaitingDriverTabLayout"
+                      android:id="@+id/txtTripImportanceAlertWaitingDriverTabLayout"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام متقاضی : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticApplicantNAmeAlertWaitinggDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="علی رضایی"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticApplicantNAmeAlertWaitinggDriverTabLayout"
+                    android:id="@+id/txt_alertdialogNameFamilyWaitingDriverTablayout"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تلفن همراه متقاضی : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticApplicantPhoneAlertWaitingDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09372115687"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticApplicantPhoneAlertWaitingDriverTabLayout"
+                    android:id="@+id/txt_ApplicantPhoneAlertWaitingDriverTabLayout"/>
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام راننده : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticDriverNameAlertWaitinggDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="علی رضایی"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticDriverNameAlertWaitinggDriverTabLayout"
+                    android:id="@+id/txt_driverNameFamilyWaitingDriverTablayout"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تلفن همراه راننده : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticDriverPhoneAlertWaitingDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09372115687"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticDriverPhoneAlertWaitingDriverTabLayout"
+                    android:id="@+id/txt_DriverPhoneAlertWaitingDriverTabLayout"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="همراهان : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticPassengersAlertWaitingDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="علی , مهدی , رضا"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticPassengersAlertWaitingDriverTabLayout"
+                    android:id="@+id/txt_passengersAlertWaitingDriverTabLayout"/>
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مبدا : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticOriginAlertWaitingDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نواب"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticOriginAlertWaitingDriverTabLayout"
+                    android:id="@+id/txt_originAlertWaitingDriverTabLayout"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مقصد : "
+                    android:textColor="#000000"
+                    android:id="@+id/txtstaticDesAlertWaitingDriverTabLayout"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تهرانپارس"
+                    android:textColor="#003366"
+                    android:layout_toLeftOf="@+id/txtstaticDesAlertWaitingDriverTabLayout"
+                    android:id="@+id/txt_desAlertWaitingDriverTabLayout"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textColor="@color/colorAccent"-->
+                    <!--android:id="@+id/txt_assignDriver_alertConfirmedTabLayout"-->
+                    <!--android:text="اختصاص راننده"/>-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/txt_cancel_alertWaitingDriverTabLayout"
+                    android:text="لغو سفر"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/txt_location_alertWaitingDriverTabLayout"
+                    android:text="موقعیت"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

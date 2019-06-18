@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/colorPrimary"
+    android:layoutDirection="rtl"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivMenuProfilePicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_account_circle_black"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tvMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/ivMenuProfilePicture"
+        android:drawablePadding="3dp"
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:paddingEnd="1dp"
+        android:text="نام کاربر"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:drawableStart="@drawable/ic_credit_card_white"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:text="اعتبار: 20,000 تومان"-->
+        <!--android:textColor="@color/colorTextLight" />-->
+
+</RelativeLayout>

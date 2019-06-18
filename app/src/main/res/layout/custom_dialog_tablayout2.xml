@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="end"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:id="@+id/txt_alertdialogNewFragmentTrip"
+                    android:text="سفر "/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_alertdialogTripReasonNewFragment"
+                    android:layout_marginStart="2dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/txt_alertdialogNewFragmentTrip"
+                    android:text="ماموریتی"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1645"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000"
+                    android:layout_marginStart="2dp"
+                    android:layout_toLeftOf="@+id/txt_alertdialogTripReasonNewFragment"
+                    android:id="@+id/txt_alertDialogNewFragmentPersuateCode"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="علی رضایی"
+                    android:textColor="#000"
+                    android:id="@+id/txt_alertdialogNameFamilyNewFragment"
+                    android:layout_toLeftOf="@+id/txt_alertDialogNewFragmentPersuateCode"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/txt_ConfirmationNewFragmentDialog"
+                    android:text="تایید"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/txt_cancelNewFragmentDialog"
+                    android:text="کنسل"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txt_locationNewFragmentDialog"
+                    android:text="موقعیت"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

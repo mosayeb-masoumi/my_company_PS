@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width">320sp</dimen>
+    <dimen name="hiegh">60sp</dimen>
+    <dimen name="valueselector_button_wh">37dp</dimen>
+    <dimen name="valueselector_margin_left_right">15dp</dimen>
+    <dimen name="valueselector_margin_top_bottom">15dp</dimen>
+    <dimen name="valueselector_bg_corners_radius">18dp</dimen>
+</resources>

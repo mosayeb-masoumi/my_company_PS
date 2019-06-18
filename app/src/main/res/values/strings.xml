@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Peysepar Passenger</string>
+    <!--<string name="connectionFaield">خطا,لطفا اینترنت خود را چک کنید</string>-->
+    <string name="connectionFaield">خطا در برقراری ارتباط</string>
+    <string name="serverFaield">خطا در اطلاعات دریافتی از سرور</string>
+    <string name="wrongUser">کلمه عبور یا نام کاربری اشتباه است</string>
+    <string name="validateYourNumber">کد فعالسازی برای شما ارسال گردید</string>
+    <string name="emptyMobileNumber">شماره موبایل صحیح نمی باشد</string>
+    <string name="emptyPassword">کلمه عبور کمتر از حد مجاز می باشد</string>
+    <string name="passwordsAreNotMatch">کلمه های عبور با هم تطابق ندارند</string>
+    <string name="after">بعد از</string>
+    <string name="secends">ثانیه میتوانید دوباره درخواست دهید.</string>
+    <string name="emptyNationalCode">کد ملی شما صحیح نمی باشد</string>
+    <string name="emptyLastName">نام خانوادگی خود را وارد نمایید</string>
+    <string name="emptyFirstName">نام خود را وارد نمایید</string>
+    <string name="emptyValidationCode">کد فعالسازی صحیح نمی باشد</string>
+    <string name="app_name_persian">پی سپار</string>
+    <string name="mobileNumber">شماره موبایل</string>
+    <string name="login">ورود</string>
+    <string name="notRegister">هنوز عضو نشده اید؟ عضویت!</string>
+    <string name="forgotPass">فراموشی کلمه عبور</string>
+    <string name="password">کلمه عبور</string>
+    <string name="lastName">نام خانوادگی</string>
+    <string name="firstName">نام</string>
+    <string name="register">عضویت</string>
+    <string name="repeatPassword">تکرار کلمه عبور</string>
+    <string name="nationalCode">کد ملی</string>
+    <string name="brand">شرکت رایان اندیشه نصر</string>
+    <string name="writeAddress">آدرس…</string>
+    <string name="backToLocation">بازگشت به مبدا</string>
+    <string name="requestSubmit">ثبت درخواست</string>
+    <string name="startLocationSubmit">تایید مبدا</string>
+    <string name="endLocationSubmit">تایید مقصد</string>
+    <string name="newUpdateAvailable">بروزرسانی نسخه جدید موجود می باشد</string>
+    <string name="forceUpdateAvailable">این نسخه پشتیبانی نمی شود ، لطفا آپدیت نمایید</string>
+    <string name="update">بروزرسانی</string>
+    <string name="cancel">انصراف</string>
+    <string name="exit">خروج</string>
+    <string name="externalStorageAccess">برای بروزرسانی به دسترسی حافظه نیاز است</string>
+    <string name="accessPermission">اجازه دسترسی</string>
+    <string name="app_url">http://dfdf.dfd/fdf.apk</string>
+    <string name="feedBack">گزارش مشکل</string>
+    <string name="about">درباره ما</string>
+    <string name="support">پشتیبانی</string>
+    <string name="connection">ارتباط</string>
+    <string name="settings">تنظیمات</string>
+    <string name="addCredit">افزایش اعتبار</string>
+    <string name="sharing">اشتراک گذاری</string>
+    <string name="app_share_link">http://goog.le/downnfdsdsd/car1.apk</string>
+    <string name="app_share_content">سامانه پی سپار ابزاری است جهت افزایش کیفیت و سرعت ارائه خدمات,کاهش هزینه ها و
+        مدیریت یکپارچه
+        سرویس های اداری.از طریق پی سپار,کلیه فرایند درخواست سفر و اختصاص راننده و تهیه گزارش های مربوط به سفرها,مکانیزه
+        می گردد.
+        پی سپار ضمن افزایش کیفیت ارائه خدمات سفرهای اداری ,تاثیر زیادی در کاهش هزینه ها خواهد داشت.
+
+    </string>
+    <string name="callToSupport">تماس با پشتیبانی</string>
+    <string name="app_share_title">اشتراک گذاری با:</string>
+    <string name="app_support_number">02177</string>
+    <string name="app_copy_right">هرگونه کپی برداری از این اپلیکیشن ممنوع و تمامی حقوق مادی و معنوی آن نزد شرکت رایان
+        اندیشه نصر محفوظ میباشد.
+    </string>
+
+    <string name="app_about_us" translatable="false">شرکت مهندسی رایان اندیشه نصر مجری پروژه اطلاعات جغرافیایی، مرکز
+        تماس، سیستمهای موبایل،
+        تهیه تصاویر ماهواره ای و تولید سیستمهای مهندسی
+    </string>
+
+    <string name="app_link">http://www.peysepar.ir</string>
+    <string name="version">نسخه :</string>
+    <string name="rateToApp">امتیاز شما به اپلیکیشن</string>
+    <string name="writeFeedback">نظر خود را اینجا وارد نمایید...</string>
+    <string name="submit">ثبت</string>
+    <string name="successfullySubmited">نظر شما با موفقیت ثبت گردید</string>
+    <string name="app_is_running">سرویس فعال</string>
+
+    <string name="title_activity_alert">AlertActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="formetTrips">سفرهای پیشین</string>
+    <string name="activationCode">کد فعالسازی</string>
+    <string name="sendActivationCodeAgain">ارسال مجدد کد فعالسازی</string>
+    <string name="newPassword">کلمه عبور</string>
+    <string name="newRepassword">تکرار کلمه عبور جدید</string>
+
+
+    <string name="changePassword">
+        <font size="17">تغییر کلمه عبور</font>
+    </string>
+
+    <string name="registerChangePass">ثبت</string>
+    <string name="cancelChangePass">انصراف</string>
+    <string name="spinner_titleOrigin">spinner_titleOrigin</string>
+    <string name="spinner_titleDestination">spinner_titleDestination</string>
+    <string name="spinner_titleTripReason">spinner_titleTripReason</string>
+    <string name="spinner_titleImportance">spinner_titleImportance</string>
+
+
+    <string name="RoadOffice">
+        <font size="17">اداره راه</font>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="increase_value">افزایش اعتبار</string>
+
+    <string name="hint">
+        <font size="13">نام مسافر را وارد کنید</font>
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="writeOptionalOrigin">
+        <font size="13">مبدا خود را وارد کنید</font>
+    </string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="about_peysepar">درباره پی سپار</string>
+    <string name="registerIPaddress">ثبت</string>
+    <string name="checkIPadress">بررسی آدرس</string>
+
+    <string name="IPaddress">http://passenger.peysepar.com</string>
+    <!--<string name="IPaddress">http://79.127.36.117:8080/passengerwebservice</string>-->
+    <!--<string name="IPaddress">http://192.168.1.111:8085</string>-->
+    <!--<string name="IPaddress">http://192.168.1.105:8085</string>-->
+    <!--<string name="IPaddress"> http://pilam.peysepar.com</string>-->
+    <!--<string name="IPaddress">http://prail.peysepar.com</string>-->
+
+
+    <string name="trip_management">مدیریت سفر</string>
+    <string name="CoUrl">www.rayanandisheh.com</string>
+
+    <string name="accessDeniedMessage">بدون اجازه دسترسی امکان استفاده از اپلیکیشن وجود ندارد با انتخاب دکمه
+        ورود به تنظیمات وارد قسمت دسترسی ها (Permission) شوید و تمام گزینه ها را فعال نمایید
+    </string>
+    <string name="title_activity_maps_tab_layout">Map</string>
+    <string name="guidance">راهنما</string>
+
+
+    <string-array name="trip_management">
+        <item>جدید</item>
+        <item>تایید شده</item>
+        <item>منتظر تایید راننده</item>
+        <item>در حال اجرا</item>
+        <item>لغو شده</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/row_history_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:layoutDirection="rtl"
+        app:cardBackgroundColor="@color/layoutBackGroundColor"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="6dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="200dp"
+                    android:id="@+id/rltxtStaticNameFamily"
+                    android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_txtApplicantNameWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textSize="16sp"
+                          android:textColor="@color/colorNavy"
+                          android:layout_marginStart="2dp"
+                          android:text="مهران "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_txtFamilyWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorNavy"
+                          android:textSize="16sp"
+                          android:layout_toEndOf="@+id/txt_row_txtApplicantNameWaitingDriverFragment"
+                          android:text="محمدی"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="180dp"
+                    android:id="@+id/rltxtStaticReasonAndCode"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/rltxtStaticNameFamily"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/imgTripImportanceConfirmedTripFragment"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"/>
+
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_trip1"
+                          android:padding="1dp"
+                          android:layout_marginTop="3dp"
+                          android:textSize="13sp"
+                          android:textColor="@color/colorNavy"
+                          android:layout_toLeftOf="@+id/imgTripImportanceConfirmedTripFragment"
+                          android:layout_marginStart="5dp"
+                          android:text="سفر"/>
+
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_TripReasonWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textSize="13sp"
+                          android:text="اداری "
+                          android:layout_marginTop="3dp"
+                          android:textColor="@color/colorNavy"
+                          android:layout_toEndOf="@+id/txt_row_trip1"
+                          android:layout_alignParentTop="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_txtPersuadeCodeWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorNavy"
+                          android:textSize="13sp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginStart="3dp"
+                          android:layout_toEndOf="@+id/txt_row_TripReasonWaitingDriverFragment"
+                          android:text="1655"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rltxtStaticOrigin"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_txtDriverName"
+                      android:padding="1dp"
+                      android:textColor="#000"
+                      android:textSize="13sp"
+                      android:layout_marginStart="2dp"
+                      android:text="نام راننده :"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_driverNameWaitingDriverFragment"
+                      android:padding="1dp"
+                      android:textColor="@color/colorNavy"
+                      android:textSize="13sp"
+                      android:layout_toEndOf="@+id/txt_row_txtDriverName"
+                      android:text="علی"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_hyphen3"
+                      android:padding="1dp"
+                      android:textColor="#000"
+                      android:textSize="13sp"
+                      android:layout_toEndOf="@+id/txt_row_driverNameWaitingDriverFragment"
+                      android:text=" "/>
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:id="@+id/rltxtStaticOrigin2"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_txtOrigin2"
+                      android:padding="1dp"
+                      android:textColor="#000"
+                      android:textSize="13sp"
+                      android:layout_marginStart="2dp"
+                      android:text="مبدا : "/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_originAddressWaitingDriverTabLayout"
+                      android:padding="1dp"
+                      android:textColor="@color/colorNavy"
+                      android:textSize="13sp"
+                      android:layout_toEndOf="@+id/txt_row_txtOrigin2"
+                      android:text="نواب"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:id="@+id/rltxtStaticOrigin3"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_des2"
+                      android:padding="1dp"
+                      android:textColor="#000"
+                      android:textSize="13sp"
+                      android:layout_marginStart="2dp"
+                      android:text="مقصد :"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_desAddressWaitingDriverTabLayout"
+                      android:padding="1dp"
+                      android:textColor="@color/colorNavy"
+                      android:textSize="13sp"
+                      android:layout_toEndOf="@+id/txt_row_des2"
+                      android:text="علی"/>
+
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:id="@+id/rltxtStaticDes"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txt_row_txtDriverPhone"-->
+        <!--android:padding="1dp"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_marginStart="2dp"-->
+        <!--android:text="تلفن همراه راننده :"/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txt_row_driverPhoneWaitingDriverFragment"-->
+        <!--android:padding="1dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="13sp"-->
+        <!--android:layout_toEndOf="@+id/txt_row_txtDriverPhone"-->
+        <!--android:text="09372112655"/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#d4d4d4"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+            <RelativeLayout
+                    android:layout_width="190dp"
+                    android:id="@+id/rltxtStaticRequest"
+                    android:layout_height="wrap_content">
+
+
+                <!--<ImageView-->
+                        <!--android:layout_width="12dp"-->
+                        <!--android:layout_height="12dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_marginStart="5dp"-->
+                        <!--android:id="@+id/img_row_TripImportanceWaitingDriverFragment"-->
+                        <!--android:src="@drawable/shape_white"/>-->
+
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_staticRequest"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:layout_marginStart="2dp"
+                          android:text="درخواست : "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_RequestTimeWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:layout_toEndOf="@+id/txt_staticRequest"
+                          android:text="10:45"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/hyphen"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/txt_row_RequestTimeWaitingDriverFragment"
+                          android:text=" - "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_RequestDateWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:layout_toEndOf="@+id/hyphen"
+                          android:text="1397/11/01"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="190dp"
+                    android:id="@+id/rltxtStaticRegister"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/rltxtStaticRequest"
+                    android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_register"
+                          android:layout_marginStart="20dp"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:text="ثبت :"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_TripTimeWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textSize="10sp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/txt_register"
+                          android:text="1655"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/hyphen2"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/txt_row_TripTimeWaitingDriverFragment"
+                          android:text=" - "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_TripDateWaitingDriverFragment"
+                          android:padding="1dp"
+                          android:textSize="10sp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/hyphen2"
+                          android:text="1397/11/07"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

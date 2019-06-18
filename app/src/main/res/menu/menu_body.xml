@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <!--<item-->
+                <!--android:id="@+id/nav_credit"-->
+                <!--android:icon="@drawable/ic_monetization_on_black"-->
+                <!--android:title="@string/addCredit"/>-->
+        <!--<item-->
+                <!--android:id="@+id/nav_setting"-->
+                <!--android:icon="@drawable/ic_settings_black"-->
+                <!--android:title="@string/settings"/>-->
+
+
+        <!--<item-->
+                <!--android:id="@+id/nav_tripManagement"-->
+                <!--android:icon="@drawable/ic_car1"-->
+                <!--android:visible="false"-->
+                <!--android:title="@string/trip_management"/>-->
+
+        <item
+                android:id="@+id/nav_tripManagementNew"
+                android:icon="@drawable/ic_car1"
+                android:visible="true"
+                android:title="@string/trip_management"/>
+
+        <item
+                android:id="@+id/nav_tripDashboard"
+                android:icon="@drawable/ic_dashboard2"
+                android:title="داشبورد"/>
+
+        <!--<item-->
+                <!--android:id="@+id/nav_vehiclesDashboard"-->
+                <!--android:icon="@drawable/ic_dashboard"-->
+                <!--android:title="داشبورد خودرو"/>-->
+
+        <item
+                android:id="@+id/nav_historyTrips"
+                android:icon="@drawable/ic_history_trip"
+                android:title="@string/formetTrips"/>
+
+        <item
+                android:id="@+id/nav_guidance"
+                android:icon="@drawable/ic_help"
+                android:title="@string/guidance"/>
+        <!--<item-->
+                <!--android:id="@+id/nav_guide"-->
+                <!--android:icon="@drawable/ic_person_black"-->
+                <!--android:title="راهنما"/>-->
+
+        <item
+                android:id="@+id/nav_about_peysepar"
+                android:icon="@drawable/ic_about_peysepar"
+                android:title="@string/about_peysepar"/>
+
+
+        <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black"
+                android:title="@string/about"/>
+
+
+
+        <!--<item-->
+                <!--android:id="@+id/nav_changeIP"-->
+                <!--android:icon="@drawable/ic_person_black"-->
+                <!--android:title="تغییرIP"/>-->
+        <!--<item-->
+                <!--android:id="@+id/nav_signature"-->
+                <!--android:icon="@drawable/ic_car1"-->
+                <!--android:title="امضا تست"/>-->
+    </group>
+
+    <!--<item android:title="@string/connection">-->
+        <!--<menu>-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/nav_share"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:icon="@drawable/ic_share_black"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:title="@string/sharing"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/nav_support"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:icon="@drawable/ic_phone_in_talk_black"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:title="@string/support"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/nav_feedback"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:icon="@drawable/ic_feedback_black"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:title="@string/feedBack"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/nav_about"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:icon="@drawable/ic_info_black"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:title="@string/about"/>&ndash;&gt;-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

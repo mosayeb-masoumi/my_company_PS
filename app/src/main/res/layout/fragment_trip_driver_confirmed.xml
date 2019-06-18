@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotationY="180"
+                tools:context="com.rayanandisheh.peysepar.passenger.fragment.trip_draiver_confirmed_fragment.TripDriverConfirmedFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/swp_driverConfirmedFragment">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="ltr">
+
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_driverConfirmedFragment"/>
+
+            <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:id="@+id/progressBarDriverConfirmTabLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/img_noIconDriverConfirmTabLayout"
+                    android:background="@drawable/ic_no_item"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

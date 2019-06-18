@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layoutDirection="rtl"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="2dp"-->
+            <!--android:weightSum="5">-->
+
+
+        <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:layout_marginRight="6dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingStart="3dp"-->
+                    <!--android:paddingEnd="3dp"-->
+                    <!--android:text="ایران"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10sp"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--<EditText-->
+                    <!--android:id="@+id/editText_strVePlateFo_signUpLayout"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="11"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="2"-->
+                    <!--android:padding="1dp"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:layout_marginBottom="1dp"-->
+                <!--android:layout_weight=".5"-->
+                <!--android:background="#000" />-->
+
+        <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="18dp"-->
+                <!--android:paddingRight="18dp"-->
+                <!--android:weightSum="3">-->
+
+
+            <!--<EditText-->
+                    <!--android:id="@+id/editText_strVePlateTh_signUpLayout"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="171"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="3"-->
+                    <!--android:textColor="@color/black" />-->
+
+
+            <!--<EditText-->
+                    <!--android:id="@+id/editText_strVePlateSe_signUpLayout"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginRight="6dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="الف"-->
+                    <!--android:inputType="text"-->
+                    <!--android:maxLength="3"-->
+                    <!--android:textColor="@color/black" />-->
+
+            <!--<EditText-->
+                    <!--android:id="@+id/editText_strVePlateFi_signUpLayout"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginRight="6dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:focusable="true"-->
+                    <!--android:hint="11"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="2"-->
+                    <!--android:paddingLeft="4dp"-->
+                    <!--android:paddingRight="4dp"-->
+                    <!--android:textColor="@color/black" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginRight="6dp"-->
+                <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:src="@drawable/iran_flag"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_marginStart="0dp"/>-->
+        <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layoutDirection="rtl">
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar_management"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--android:minHeight="?attr/actionBarSize"-->
+    <!--android:theme="?attr/actionBarTheme"-->
+    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--app:theme="@style/ThemeOverlay.AppCompat.Dark">-->
+    <!---->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tablayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layoutDirection="rtl"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--app:tabMode="scrollable"-->
+    <!--app:tabSelectedTextColor="@android:color/white"-->
+    <!--app:tabTextColor="@android:color/black">-->
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlShowDateRangeDashboard"
+                android:background="@color/colorPrimary"
+               android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView android:layout_width="35dp"
+                           android:layout_height="35dp"
+                           android:rotation="180"
+                           android:padding="5dp"
+                           android:layout_marginTop="20dp"
+                           android:id="@+id/arrowBackTripManagement"
+                           android:src="@drawable/ic_arrow_back"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="#fff"
+                          android:layout_marginStart="5dp"
+                          android:layout_toLeftOf="@+id/arrowBackTripManagement"
+                          android:padding="5dp"
+                          android:layout_marginTop="17dp"
+                          android:textSize="17sp"
+                          android:text="مدیریت سفر"
+                          android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_height="wrap_content">
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/rlDateFrom">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="#fff"
+                              android:id="@+id/txtFrom"
+                              android:text="از "/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="14sp"
+                            android:paddingEnd="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/value_selector_bg_yellow"
+                            android:textColor="#fff"
+                            android:id="@+id/edtDateFrom_tripManagement"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/txtFrom"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_below="@+id/rlDateFrom"
+                                android:padding="2dp"
+                                android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="#fff"
+                              android:id="@+id/txt_to"
+                              android:text="تا "/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="14sp"
+                            android:paddingEnd="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/value_selector_bg_yellow"
+                            android:textColor="#fff"
+                            android:id="@+id/edtDateTo_tripManagement"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/txt_to"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        /*-------------------------------------------*/
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"
+                android:id="@+id/rlHideDateRangeDashboard"
+                android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView android:layout_width="35dp"
+                           android:layout_height="35dp"
+                           android:rotation="180"
+                           android:padding="5dp"
+                           android:layout_marginTop="10dp"
+                           android:id="@+id/arrowBackTripManagementDashboard"
+                           android:src="@drawable/ic_arrow_back"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="#fff"
+                          android:layout_marginStart="5dp"
+                          android:layout_toLeftOf="@+id/arrowBackTripManagementDashboard"
+                          android:padding="5dp"
+                          android:layout_marginTop="8dp"
+                          android:textSize="17sp"
+                          android:text="مدیریت سفر"
+                          android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabMode="scrollable"
+            app:tabBackground="@drawable/tablayout_selected_background"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@android:color/white">
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabNewFragment"
+                android:text="جدید"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabConfirmedFragment"
+                android:text="تایید شده"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabDriverConfirmationFragment"
+                android:text="منتظر تایید راننده"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabRunningFragment"
+                android:text="درحال اجرا"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabCanceledFragment"
+                android:text="لغو شده"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabDashboardFragment"
+                android:text="داشبورد سفر"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationY="180"
+            android:id="@+id/viewPager">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
+
+
+
+

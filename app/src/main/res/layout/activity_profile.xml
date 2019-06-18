@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:layout_below="@+id/toolbar_profile"
+            android:layout_width="match_parent">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_profile"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rlImgView"
+                        android:gravity="center_horizontal">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/ivProfilePic"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_account3"
+                            app:civ_border_width="2dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:civ_border_color="#b990d2"/>
+
+
+                    <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgProfile"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/ic_camera_enhance"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                            android:id="@+id/tvProfilePic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivProfilePic"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="تغییر عکس پروفایل"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="نام"-->
+                <!--android:textColor="@color/colorsecondarytext"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:textStyle="bold"/>-->
+                <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:id="@+id/ivWarningProfileName"-->
+                <!--android:src="@drawable/ic_warning"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_marginEnd="5dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_height="20dp"/>-->
+                <!--</RelativeLayout>-->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp">
+
+                    <LinearLayout android:layout_width="20dp"
+                                  android:layout_marginStart="3dp"
+                                  android:layout_height="20dp">
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/ivWarningProfileName"
+                                android:src="@drawable/ic_warning"
+                                android:visibility="gone"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="نام"
+                                android:textColor="@color/colorsecondarytext"
+                                android:textSize="15sp"
+                                android:layout_marginStart="5dp"
+                                android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/spiner_background"
+                        android:layout_marginRight="15dp"
+                        android:padding="3dp"
+                        android:gravity="center">
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textSize="17dp"
+                              android:textColor="#000"
+                              android:background="@null"
+                              android:id="@+id/edtNameProfile"
+                              android:gravity="center"
+                              android:drawableLeft="@drawable/ic_person_black"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="نام خانوادگی"-->
+                <!--android:textColor="@color/colorsecondarytext"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:textStyle="bold"/>-->
+                <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:id="@+id/ivWarningProfileFamily"-->
+                <!--android:src="@drawable/ic_warning"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_marginEnd="5dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_height="20dp"/>-->
+                <!--</RelativeLayout>-->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp">
+
+                    <LinearLayout android:layout_width="20dp"
+                                  android:layout_marginStart="3dp"
+                                  android:layout_height="20dp">
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/ivWarningProfileFamily"
+                                android:src="@drawable/ic_warning"
+                                android:visibility="gone"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="نام خانوادگی"
+                                android:textColor="@color/colorsecondarytext"
+                                android:textSize="15sp"
+                                android:layout_marginStart="5dp"
+                                android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/spiner_background"
+                        android:layout_marginRight="15dp"
+                        android:padding="3dp"
+                        android:gravity="center">
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textSize="17dp"
+                              android:textColor="#000"
+                              android:background="@null"
+                              android:id="@+id/edtFamilyProfile"
+                              android:gravity="center"
+                              android:drawableLeft="@drawable/ic_person_black"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="موبایل"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorsecondarytext"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"/>
+
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/ivWarningProfileMobile"
+                            android:src="@drawable/ic_warning"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="20dp"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/spiner_background"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:layoutDirection="rtl">
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="09372112652"
+                              android:textSize="17dp"
+                              android:textColor="#000"
+                              android:id="@+id/txtMobileProfile"
+                              android:gravity="center"
+                              android:drawableLeft="@drawable/ic_phone_android_black"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="کد ملی"
+                            android:textColor="@color/colorsecondarytext"
+                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"/>
+
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/ivWarningProfileNcode"
+                            android:src="@drawable/ic_warning"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="20dp"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/spiner_background"
+                        android:layout_marginRight="15dp"
+                        android:padding="3dp"
+                        android:gravity="center">
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:hint="کد ملی"
+                              android:textSize="17dp"
+                              android:textColor="#000"
+                              android:inputType="number"
+                              android:maxLength="10"
+                              android:background="@null"
+                              android:id="@+id/edtNationalIDProfile"
+                              android:gravity="center"
+                              android:drawableLeft="@drawable/ic_id2"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="جایگاه سازمانی"
+                            android:textColor="@color/colorsecondarytext"
+                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"/>
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:id="@+id/ivWarningProfileNcode"-->
+                    <!--android:src="@drawable/ic_warning"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_height="20dp"/>-->
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/spiner_background"
+                        android:layout_marginRight="15dp"
+                        android:padding="3dp"
+                        android:gravity="center">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:textColor="#000"
+                            android:text="اختصاص نیافته"
+                            android:lines="2"
+                            android:id="@+id/txtOrgPosition"
+                            android:gravity="center"/>
+
+                </RelativeLayout>
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="تاریخ تولد"-->
+                <!--android:textColor="@color/colorsecondarytext"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:textStyle="bold"/>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/spiner_background"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:padding="3dp"-->
+                <!--android:gravity="center">-->
+                <!--<EditText android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="97/08/25"-->
+                <!--android:textSize="17dp"-->
+                <!--android:textColor="#000"-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/edtDateProfile"-->
+                <!--android:gravity="center"-->
+                <!--android:drawableLeft="@drawable/ic_calander"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentEnd="true"/>-->
+
+                <!--</RelativeLayout>-->
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="جنسیت"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorsecondarytext"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"/>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spiner_background"
+                        android:padding="3dp"
+                        android:layoutDirection="rtl">
+
+                    <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:id="@+id/radioGroup"
+                            android:orientation="horizontal">
+                        <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="مرد"
+                                android:checked="true"
+                                android:id="@+id/rbMan"
+                                android:textSize="15dp"/>
+                        <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="زن"
+                                android:id="@+id/rbWoman"
+                                android:textSize="15dp"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مبدا دائم (اختیاری)"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorsecondarytext"
+                            android:textSize="16sp"
+                            android:id="@+id/text5"
+                            android:layout_toLeftOf="@+id/chkProfile"
+                            android:textStyle="bold"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/chkProfile"
+                            android:clickable="false"
+                            android:layout_alignParentStart="true"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="3dp"
+                              android:layout_marginLeft="15dp"
+                              android:layout_marginRight="15dp"
+                                android:padding="5dp"
+                              android:layout_marginBottom="10dp"
+                              android:background="@drawable/spiner_background">
+
+
+                        <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="آدرش پیش فرض سوار شدن شما"
+                                android:textSize="16sp"
+                                android:gravity="center"
+
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:id="@+id/edtOptionalOrigin"/>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/edtOptionalOrigin"
+                            android:gravity="center"
+                            android:id="@+id/rlChoosePermanentOrigin"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/txtSelectedPositionName"
+                                android:text="انتخاب از نقشه"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginEnd="40dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/shape_dash"
+                                android:textSize="13sp"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll_profile"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                <RelativeLayout
+                        android:id="@+id/rlButtons"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+                    <Button
+                            android:id="@+id/btnProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/bg_button"
+                            android:drawablePadding="-24dp"
+                            android:foreground="?selectableItemBackground"
+                            android:text="ثبت"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                    <ProgressBar
+                            android:id="@+id/pbProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:indeterminateTint="#fff"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/bg_button"
+                            android:drawablePadding="-24dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

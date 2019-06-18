@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBackground"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+    <EditText
+            android:id="@+id/etIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="address"
+            android:textColor="@color/colorPrimaryText"
+            android:textColorHint="@color/colorSecondaryText"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="example: http://rayanandisheh.com"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="8dp" />
+
+
+
+
+    <RelativeLayout
+            android:id="@+id/rlButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp">
+        <Button
+                android:id="@+id/btnCheckAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/checkIPadress"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        <ProgressBar
+                android:id="@+id/pbCheckAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:indeterminateTint="#fff"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+            android:id="@+id/btRegisterIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/registerIPaddress"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+</LinearLayout>

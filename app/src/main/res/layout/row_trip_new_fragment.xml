@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/row_history_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:layoutDirection="rtl"
+        app:cardBackgroundColor="@color/layoutBackGroundColor"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="6dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="190dp"
+                    android:id="@+id/rltxtStaticNameFamily"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_txtApplicantNameNewFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorNavy"
+                          android:textSize="16sp"
+                          android:layout_marginStart="2dp"
+                          android:text="مهران "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_txtFamilyNewFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorNavy"
+                          android:textSize="16sp"
+                          android:layout_toEndOf="@+id/txt_row_txtApplicantNameNewFragment"
+                          android:text="محمدی"/>
+
+            </RelativeLayout>
+
+
+            <!--<RelativeLayout-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/rlStar"-->
+                    <!--android:layout_toLeftOf="@+id/rltxtStaticNameFamily">-->
+
+                <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/star1"/>-->
+
+
+            <!--</RelativeLayout>-->
+
+
+            <RelativeLayout
+                    android:layout_width="190dp"
+                    android:id="@+id/rltxtStaticReasonAndCode"
+                    android:layout_toLeftOf="@+id/rltxtStaticNameFamily"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/imgTripImportanceNewFragment"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"/>
+
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_trip"
+                          android:padding="1dp"
+                          android:textSize="13sp"
+                          android:textColor="@color/colorNavy"
+                          android:layout_marginTop="3dp"
+                          android:layout_toLeftOf="@+id/imgTripImportanceNewFragment"
+                          android:layout_marginStart="2dp"
+                          android:text="سفر"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_TripReasonNewFragment"
+                          android:padding="1dp"
+                          android:layout_marginTop="3dp"
+                          android:textColor="@color/colorNavy"
+                          android:layout_toEndOf="@+id/txt_row_trip"
+                          android:textSize="13sp"
+                          android:text="اداری "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_txtPersuadeCodeNewFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorNavy"
+                          android:layout_marginTop="5dp"
+                          android:textSize="13sp"
+                          android:layout_marginStart="3dp"
+                          android:layout_toEndOf="@+id/txt_row_TripReasonNewFragment"
+                          android:text="1655"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:id="@+id/rltxtStaticApplicantPhone"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txt_row_txtApplicantPhone"-->
+        <!--android:padding="1dp"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_marginStart="2dp"-->
+        <!--android:text="تلفن همراه متقاضی :"/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txt_row_applicantPhoneNewFragment"-->
+        <!--android:padding="1dp"-->
+        <!--android:paddingEnd="5dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="13sp"-->
+        <!--android:layout_toEndOf="@+id/txt_row_txtApplicantPhone"-->
+        <!--android:text="09372115684"/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:id="@+id/rltxtStaticOrigin"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_txtOrigin"
+                      android:padding="1dp"
+                      android:textSize="13sp"
+                      android:textColor="#000"
+                      android:layout_marginStart="2dp"
+                      android:text="مبدا :"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_originAddressNewFragment"
+                      android:padding="1dp"
+                      android:paddingEnd="5dp"
+                      android:textColor="@color/colorNavy"
+                      android:textSize="13sp"
+                      android:layout_toEndOf="@+id/txt_row_txtOrigin"
+                      android:text="تهران,تجریش"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:id="@+id/rltxtStaticDes"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_txtDes"
+                      android:padding="1dp"
+                      android:textColor="#000"
+                      android:textSize="13sp"
+                      android:layout_marginStart="2dp"
+                      android:text="مقصد :"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txt_row_DesAddressNewFragment"
+                      android:padding="1dp"
+                      android:textColor="@color/colorNavy"
+                      android:paddingEnd="5dp"
+                      android:textSize="13sp"
+                      android:layout_toEndOf="@+id/txt_row_txtDes"
+                      android:text="تهران,نواب"/>
+
+        </RelativeLayout>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#d4d4d4"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+            <RelativeLayout
+                    android:layout_width="190dp"
+                    android:id="@+id/rltxtStaticRequest"
+                    android:layout_height="wrap_content">
+
+
+                <!--<ImageView-->
+                <!--android:layout_width="12dp"-->
+                <!--android:layout_height="12dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:id="@+id/img_row_TripImportanceNewFragment"-->
+                <!--android:src="@drawable/shape_white"/>-->
+
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_staticRequest"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:layout_marginStart="2dp"
+                          android:text="درخواست : "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_RequestTimeNewFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:layout_toEndOf="@+id/txt_staticRequest"
+                          android:text="10:45"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/hyphen"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/txt_row_RequestTimeNewFragment"
+                          android:text=" - "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_RequestDateNewFragment"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:layout_toEndOf="@+id/hyphen"
+                          android:text="1397/11/01"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="190dp"
+                    android:id="@+id/rltxtStaticRegister"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/rltxtStaticRequest"
+                    android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_register"
+                          android:layout_marginStart="20dp"
+                          android:padding="1dp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:textSize="10sp"
+                          android:text="مد نظر :"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_supposeTimeNewFragment"
+                          android:padding="1dp"
+                          android:textSize="10sp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/txt_register"
+                          android:text="1655"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/hyphen2"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/txt_row_supposeTimeNewFragment"
+                          android:text=" - "/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_row_supposeDateNewFragment"
+                          android:padding="1dp"
+                          android:textSize="10sp"
+                          android:textColor="@color/colorSecondaryText"
+                          android:layout_toEndOf="@+id/hyphen2"
+                          android:text="1397/11/07"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

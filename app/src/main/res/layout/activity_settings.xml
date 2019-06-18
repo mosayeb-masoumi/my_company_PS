@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:attr="http://schemas.android.com/apk/res-auto"
+              android:layoutDirection="rtl"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            attr:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            attr:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+            android:id="@+id/rlNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="دریافت نوتیفیکیشن"
+                android:textColor="@color/colorText"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        <Switch
+                android:id="@+id/switchNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+        />
+
+    </RelativeLayout>
+
+    <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height=".5dp"-->
+            <!--android:background="@color/colorDivider" />-->
+
+    <!--<RelativeLayout-->
+            <!--android:id="@+id/rlAutoNightMode"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="15dp"-->
+                <!--android:text="حالت شب خودکار"-->
+                <!--android:textColor="@color/colorPrimaryText"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--<CheckBox-->
+                <!--android:id="@+id/cbAutoNightMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="15dp"-->
+                <!--android:checked="true" />-->
+    <!--</RelativeLayout>-->
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorDivider" />
+
+    <RelativeLayout
+            android:id="@+id/rlNightMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tvNightMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:padding="15dp"
+                android:text="حالت شب"
+                android:textColor="@color/colorText"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        <Switch
+                android:id="@+id/switchNightMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layoutDirection="ltr"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:checked="false"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorDivider" />
+
+</LinearLayout>

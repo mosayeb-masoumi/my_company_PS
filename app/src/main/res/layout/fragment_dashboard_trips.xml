@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:rotationY="180"
+        android:focusableInTouchMode="true"
+        android:cursorVisible="false"
+        tools:context=".activities.add_trip.AddTripActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swp_refreshDashboardTripFragment">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/ll5"-->
+                    <!--android:orientation="vertical">-->
+
+                <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:paddingStart="5dp"-->
+                        <!--android:paddingEnd="5dp">-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:id="@+id/txtStaticTravelingCar"-->
+                            <!--android:text="تعداد خودروهای در حال سفر : "/>-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtTotalRunningCarDashboardTripFragment"-->
+                            <!--android:textColor="#003366"-->
+                            <!--android:layout_toLeftOf="@+id/txtStaticTravelingCar"-->
+                            <!--android:text="30"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingStart="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:paddingEnd="5dp">-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtStaticReadyCar"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="تعداد خودروهای آماده سفر : "/>-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtTotalReadyCarsDashboardTripFragment"-->
+                            <!--android:textColor="#003366"-->
+                            <!--android:layout_toLeftOf="@+id/txtStaticReadyCar"-->
+                            <!--android:text="25"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingStart="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:paddingEnd="5dp">-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtStaticKM"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="کل کیلومتر طی شده : "/>-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtTotalKMDashboardTripFragment"-->
+                            <!--android:textColor="#003366"-->
+                            <!--android:layout_toLeftOf="@+id/txtStaticKM"-->
+                            <!--android:text="1250  کیلومتر"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingStart="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:paddingEnd="5dp">-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtStaticTime"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="کل زمان سفر : "/>-->
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/txtTotalTripTimeDashboardTripFragment"-->
+                            <!--android:textColor="#003366"-->
+                            <!--android:layout_toLeftOf="@+id/txtStaticTime"-->
+                            <!--android:text="10 ساعت و 50  دقیقه"/>-->
+
+                <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll5"
+                    android:layout_height="wrap_content">
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="10dp"
+                          android:id="@+id/txtStatictripInfo"
+                          android:textColor="#003366"
+                          android:gravity="center"
+                          android:text="نمودار اطلاعات کل سفرها"/>
+                <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chartDashboardTripFragment"
+                        android:layout_below="@+id/txtStatictripInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="fill_parent"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

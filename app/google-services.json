@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "294640308399",
+    "firebase_url": "https://peysepar-customer.firebaseio.com",
+    "project_id": "peysepar-customer",
+    "storage_bucket": "peysepar-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294640308399:android:f0b522d7f4155dce",
+        "android_client_info": {
+          "package_name": "com.rayanandisheh.peysepar.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294640308399-n4381rs6padp07ovkfpe4iou774bigrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzAlcjcYMcvxvKMmqYCK4qO29gk1CIa8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294640308399:android:c7fe832427e79ca3",
+        "android_client_info": {
+          "package_name": "com.rayanandisheh.peysepar.passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294640308399-n4381rs6padp07ovkfpe4iou774bigrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzAlcjcYMcvxvKMmqYCK4qO29gk1CIa8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

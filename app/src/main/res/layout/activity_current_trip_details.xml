@@ -1,0 +1,1020 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layoutBackGroundColor"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                android:padding="5dp"
+                tools:context="com.rayanandisheh.peysepar.passenger.activities.historyDetails.HistoryDetailsActivity">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_nasr">
+
+                <ImageView
+                        android:id="@+id/image_nasr"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ic_launcher"/>
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_nasr"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="8dp"
+                    app:cardBackgroundColor="@color/colorTextIcon"
+                    app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/colorTextIcon"
+                            android:text=" مشخصات سفر"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/star1"
+                                android:id="@+id/imgStar_currentTripDetail"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/txtImportance_currentTripDetail"
+                                android:text="فوری"
+                                android:layout_toLeftOf="@+id/imgStar_currentTripDetail"
+                                android:textColor="@color/colorNavy"/>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:text=" کد سفر : "
+                                  android:id="@+id/staticPersuadCode"
+                                  android:textColor="@color/colorPrimaryText"
+                                  android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtPursuitCode_currntDtls"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:lines="1"
+                                android:layout_toEndOf="@+id/staticPersuadCode"
+                                android:layout_marginTop="2dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp">
+
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:text="وضعیت سفر : "
+                                  android:id="@+id/staticStatusCode"
+                                  android:textColor="@color/colorPrimaryText"
+                                  android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtTripStatus_currntDtls"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:lines="1"
+                                android:layout_toEndOf="@+id/staticStatusCode"
+                                android:layout_marginTop="2dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy" android:layout_alignParentTop="true"/>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:text="تاریخ و ساعت درخواست : "
+                                  android:id="@+id/staticRequestDateTime"
+                                  android:textColor="@color/colorPrimaryText"
+                                  android:textSize="15sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_toEndOf="@+id/staticRequestDateTime"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/txtRequestDate_Time_currntDtls"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="نام مسافرین :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtPassengerNames_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:text="تاریخ و ساعت مدنظر : "
+                                  android:id="@+id/staticSupposedDateTime"
+                                  android:textColor="@color/colorPrimaryText"
+                                  android:textSize="15sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_toEndOf="@+id/staticSupposedDateTime"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/txtSupposedDate_Time_currntDtls"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="مبدا :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtOriginName_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="مقصد :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtDesName_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="دلیل و اهمیت سفر :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtReasonImportance_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/llCarType"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="نوع وسیله نقلیه :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtVehicleType_currentTrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:textColor="@color/colorNavy"
+                                android:text=""/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <RelativeLayout android:layout_width="0dp"
+                                        android:layout_weight="0.33"
+                                        android:layout_height="wrap_content">
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginStart="10dp"
+                                      android:text="دارای برگشت : "
+                                      android:id="@+id/staticReturn"
+                                      android:textColor="@color/colorPrimaryText"
+                                      android:textSize="15sp"/>
+
+                            <TextView
+                                    android:id="@+id/txtReturn_currntDtls"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:lines="1"
+                                    android:layout_toEndOf="@+id/staticReturn"
+                                    android:layout_marginTop="1dp"
+                                    android:gravity="start"
+                                    android:text=""
+                                    android:textColor="@color/colorNavy"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="0dp"
+                                        android:layout_weight="0.33"
+                                        android:layout_height="wrap_content">
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginStart="10dp"
+                                      android:text=" در اختیار : "
+                                      android:id="@+id/staticInOrder"
+                                      android:textColor="@color/colorPrimaryText"
+                                      android:textSize="15sp"/>
+
+                            <TextView
+                                    android:id="@+id/txtInOrder_currntDtls"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:lines="1"
+                                    android:layout_toEndOf="@+id/staticInOrder"
+                                    android:layout_marginTop="1dp"
+                                    android:gravity="start"
+                                    android:text=""
+                                    android:textColor="@color/colorNavy"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:id="@+id/txtStaticComment"
+                                    android:text="توضیحات متقاضی : "
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="15sp"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textColor="@color/colorNavy"
+                                    android:layout_toLeftOf="@+id/txtStaticComment"
+                                    android:id="@+id/txtEmptyCommentCurrentTripDetail"
+                                    android:textSize="15sp"/>
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                                android:id="@+id/txtComment_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:gravity="start"
+                                android:layout_marginEnd="10dp"
+                                android:paddingRight="3dp"
+                                android:paddingEnd="3dp"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="7dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:text="تاریخ سفر :"-->
+                    <!--android:textColor="@color/colorPrimaryText"-->
+                    <!--android:textSize="15sp"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/txtTripDate_currntDtls"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="3dp"-->
+                    <!--android:gravity="start"-->
+                    <!--android:layout_marginTop="1dp"-->
+                    <!--android:text="1397/09/06"-->
+                    <!--android:textColor="@color/colorNavy"/>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="7dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:text="آدرس مبدا :"-->
+                    <!--android:textColor="@color/colorPrimaryText"-->
+                    <!--android:textSize="15sp"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/txtOriginAddress_currntDtls"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="3dp"-->
+                    <!--android:gravity="start"-->
+                    <!--android:text="رسالت"-->
+                    <!--android:textColor="@color/colorNavy"/>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="7dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:text="آدرس مقصد :"-->
+                    <!--android:textColor="@color/colorPrimaryText"-->
+                    <!--android:textSize="15sp"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/txtDesAddress_currntDtls"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="3dp"-->
+                    <!--android:lines="1"-->
+                    <!--android:gravity="start"-->
+                    <!--android:text="تهرانپارس"-->
+                    <!--android:textColor="@color/colorNavy"/>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="7dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:text=" کد رهگیری :"-->
+                    <!--android:textColor="@color/colorPrimaryText"-->
+                    <!--android:textSize="15sp"/>-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/txtPursuitCode_currntDtls"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginStart="3dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:lines="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="1dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="start"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="55555"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/colorNavy"/>&ndash;&gt;-->
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_nasr"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="8dp"
+                    android:id="@+id/cvDriverInfo_currntDtls"
+                    app:cardBackgroundColor="@color/colorTextIcon"
+                    app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llDriverName"
+                        android:orientation="vertical">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/colorTextIcon"
+                            android:text=" مشخصات راننده"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_weight="0.66">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:text="نام راننده :"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="15sp"/>
+
+                                <TextView
+                                        android:id="@+id/txtDriverName_currentTrip"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:gravity="start"
+                                        android:textColor="@color/colorNavy"
+                                        android:text=""/>
+
+                            </LinearLayout>
+
+                            <!--<LinearLayout-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:orientation="horizontal">-->
+
+                                <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_marginStart="10dp"-->
+                                        <!--android:text="پلاک خودرو :"-->
+                                        <!--android:textColor="@color/colorPrimaryText"-->
+                                        <!--android:textSize="15sp"/>-->
+
+                                <!--<TextView-->
+                                        <!--android:id="@+id/txtNumberPlate_currntDtls"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_marginStart="3dp"-->
+                                        <!--android:gravity="start"-->
+                                        <!--android:layout_marginTop="2dp"-->
+                                        <!--android:text=""-->
+                                        <!--android:textColor="@color/colorNavy"/>-->
+                            <!--</LinearLayout>-->
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:text="مدل خودرو :"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="15sp"/>
+
+                                <TextView
+                                        android:id="@+id/txtCarModel_currntDtls"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/colorNavy"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:text="براورد زمان رسیدن راننده :"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="15sp"/>
+
+                                <TextView
+                                        android:id="@+id/txtArrivingTimeCalculate_currntDtls"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/colorNavy"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_weight="0.33">
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="10dp"
+                                    android:id="@+id/imgCall_currntDtls"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="5dp"
+                                    android:src="@drawable/ic_call"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/number_plate_bg"
+                            android:layoutDirection="rtl"
+                            android:orientation="horizontal"
+                            android:padding="2dp"
+                            android:weightSum="5">
+
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:paddingStart="3dp"
+                                    android:paddingEnd="3dp"
+                                    android:text="ایران"
+                                    android:textColor="#000"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:id="@+id/txt4_NPlate_crntDtls"                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="22"
+                                    android:maxLength="2"
+                                    android:padding="1dp"
+                                    android:textColor="#000"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight=".5"
+                                android:background="#000" />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="18dp"
+                                android:weightSum="3">
+
+
+                            <TextView
+                                    android:id="@+id/txt3_NPlate_crntDtls"                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="171"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:textColor="#000000"/>
+
+
+                            <TextView
+                                    android:id="@+id/txt2_NPlate_crntDtls"                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_weight="1"
+                                    android:text="الف"
+                                    android:inputType="text"
+                                    android:textColor="#000000" />
+
+                            <TextView
+                                    android:id="@+id/txt1_NPlate_crntDtls"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_weight="1"
+                                    android:focusable="true"
+                                    android:text="11"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:paddingLeft="4dp"
+                                    android:paddingRight="4dp"
+                                    android:textColor="#000000" />
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1">
+
+                            <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/iran_flag"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="0dp"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_nasr"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/cvDateTime__currntDtls"
+                    app:cardBackgroundColor="@color/colorTextIcon"
+                    app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/colorTextIcon"
+                            android:text="تاریخ و ساعت سفر"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="زمان آمادگی سفر :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtTripPreparationTime_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:layout_marginTop="2dp"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="ساعت شروع سفر :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtStartTripTime_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:layout_marginTop="2dp"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:text="تاریخ و ساعت پایان سفر : "
+                                  android:id="@+id/staticFinishedTripDateTime"
+                                  android:textColor="@color/colorPrimaryText"
+                                  android:textSize="15sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_toEndOf="@+id/staticFinishedTripDateTime"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/txtFinishTripDateTime_currntDtls"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="مدت سفر :"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/txtTripDurationTime_currntDtls"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:gravity="start"
+                                android:text=""
+                                android:textColor="@color/colorNavy"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/rlScoreNotToday"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtStaticScore"
+                                android:textColor="#000"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginStart="10dp"
+                                android:text="امتیاز : "/>
+
+                        <RatingBar
+                                android:id="@+id/rate_currntDtls"
+                                style="?android:attr/ratingBarStyleIndicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="true"
+                                android:layout_marginStart="90dp"
+                                android:numStars="5"
+                                android:rating="3.5"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                    android:id="@+id/rlCancelTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true">
+                <Button
+                        android:id="@+id/btnCancelCurrentTripDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_button"
+                        android:foreground="?selectableItemBackground"
+                        android:text="لغو سفر"
+                        android:textColor="#fff"
+
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                <ProgressBar
+                        android:id="@+id/pbCancelCurrentTripDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:visibility="gone"
+                        android:indeterminateTint="#fff"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_button"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

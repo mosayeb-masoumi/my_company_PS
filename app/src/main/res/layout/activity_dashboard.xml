@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layoutDirection="rtl">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_dashboardActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_Dashboard"
+            android:layout_width="match_parent"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabBackground="@drawable/tablayout_selected_background"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@android:color/white">
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabDashboardTripsFragment"
+                android:text="سفر" />
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabDashboardCarsFragment"
+                android:text="خودرو" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationY="180"
+            android:id="@+id/viewPagerDashboard">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
+

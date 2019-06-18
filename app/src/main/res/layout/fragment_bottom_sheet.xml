@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/cvBottom"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="اطلاعات سفر امروز "
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="تاریخ"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/currentDateFragment"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="2dp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDashboard1"
+                android:textColor="#fff"
+                android:text="تعداد سفرهای درخواست امروز :"
+                android:layout_alignParentTop="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRequestTodayTrip"
+                android:textColor="#fff"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/txtDashboard1"
+                android:text="0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="2dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDashboard2"
+                android:textColor="#fff"
+                android:text="کل مدت سفر امروز :"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTotalTimeTodayTrip"
+                android:layout_marginStart="3dp"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/txtDashboard2"
+                android:text="0"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="2dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDashboard3"
+                android:textColor="#fff"
+                android:text="کیلومتر طی شده سفر امروز :"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtKMTodayTrip"
+                android:layout_marginStart="3dp"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/txtDashboard3"
+                android:text="0"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

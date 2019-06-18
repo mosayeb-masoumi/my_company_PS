@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:attr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:focusableInTouchMode="true"
+        android:cursorVisible="false"
+        tools:context=".activities.add_trip.AddTripActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_add_trip"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            attr:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            attr:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/colorPrimary">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_add_trip">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:id="@+id/cv1"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:orientation="vertical">-->
+
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:id="@+id/text1"-->
+                                <!--android:text="نام : "-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:paddingStart="5dp"-->
+                                <!--android:layout_alignParentStart="true"/>-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:id="@+id/txtapplicantNameRegisterTrip"-->
+                                <!--android:layout_toLeftOf="@+id/text1"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:textColor="#000"-->
+                                <!--android:text="علی رضایی"/>-->
+                    <!--</RelativeLayout>-->
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="10dp">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:id="@+id/text2"-->
+                                <!--android:text="موبایل : "-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:paddingStart="5dp"-->
+                                <!--android:layout_alignParentStart="true"/>-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textSize="17sp"-->
+                                <!--android:textColor="#000"-->
+                                <!--android:layout_marginTop="1dp"-->
+                                <!--android:id="@+id/txtMobileRegisterTrip"-->
+                                <!--android:layout_toLeftOf="@+id/text2"-->
+                                <!--android:text="09372115524"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="مبدا"-->
+                                <!--android:layout_marginTop="3dp"-->
+                                <!--android:textColor="@color/colorsecondarytext"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:layout_marginStart="7dp"-->
+                                <!--android:textStyle="bold"/>-->
+                        <!--<ImageView-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:id="@+id/ivWarningOrigin"-->
+                                <!--android:src="@drawable/ic_warning"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:layout_marginEnd="5dp"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_height="20dp"/>-->
+                    <!--</RelativeLayout>-->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="match_parent">
+
+                        <LinearLayout android:layout_width="20dp"
+                                      android:layout_marginTop="3dp"
+                                      android:layout_height="20dp">
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/ivWarningOrigin"
+                                    android:src="@drawable/ic_warning"
+                                    android:visibility="visible"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="مبدا"
+                                    android:textColor="@color/colorsecondarytext"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/spiner_background"
+                            android:padding="3dp"
+                            android:layoutDirection="rtl">
+
+                        <AutoCompleteTextView
+                                android:id="@+id/autoCompleteTxtOrigin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:hint="مبدا خود را وارد کنید"
+                                android:layout_alignParentLeft="true">
+
+                            <!--<requestFocus />-->
+
+                        </AutoCompleteTextView>
+                        <!--<Spinner-->
+                        <!--android:id="@+id/spinnerOrigin"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:focusable="true"-->
+                        <!--android:focusableInTouchMode="true">-->
+
+                        <!--<requestFocus/>-->
+                        <!--</Spinner>-->
+                    </RelativeLayout>
+
+
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_marginTop="7dp"-->
+                            <!--android:id="@+id/rlTextDes"-->
+                            <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="مقصد"-->
+
+                                <!--android:layout_marginTop="3dp"-->
+                                <!--android:layout_marginStart="7dp"-->
+                                <!--android:textColor="@color/colorsecondarytext"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:textStyle="bold"/>-->
+                        <!--<ImageView-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:id="@+id/ivWarningDes"-->
+                                <!--android:src="@drawable/ic_warning"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:layout_marginEnd="5dp"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_height="20dp"/>-->
+                    <!--</RelativeLayout>-->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:id="@+id/rlTextDes"
+                            android:layout_height="match_parent">
+
+                        <LinearLayout android:layout_width="20dp"
+                                      android:layout_marginTop="3dp"
+                                      android:layout_height="20dp">
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/ivWarningDes"
+                                    android:src="@drawable/ic_warning"
+                                    android:visibility="visible"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="مقصد"
+                                    android:textColor="@color/colorsecondarytext"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/spiner_background"
+                            android:padding="3dp"
+                            android:id="@+id/rlACtextDes"
+                            android:layoutDirection="rtl">
+
+
+                        <AutoCompleteTextView
+                                android:id="@+id/autoCompleteTxtDes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:hint="مقصد خود را وارد کنید"
+                                android:layout_alignParentLeft="true">
+                        </AutoCompleteTextView>
+                    </RelativeLayout>
+
+
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_marginTop="7dp"-->
+                            <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="مسافرین "-->
+
+                                <!--android:layout_marginTop="3dp"-->
+                                <!--android:layout_marginStart="7dp"-->
+                                <!--android:textColor="@color/colorsecondarytext"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:textStyle="bold"/>-->
+                        <!--<ImageView-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:id="@+id/ivWarningDes1"-->
+                                <!--android:src="@drawable/ic_warning"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:layout_marginEnd="5dp"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_height="20dp"/>-->
+                    <!--</RelativeLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout android:layout_width="20dp"
+                                  android:layout_marginTop="3dp"
+                                  android:layout_height="20dp">
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/ivWarningPassengersAddTrip"
+                                android:src="@drawable/ic_warning"
+                                android:layout_alignParentLeft="true"
+                                android:visibility="gone"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content">
+                                <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="مسافرین"
+                                android:textColor="@color/colorsecondarytext"
+                                android:textSize="15sp"
+                                android:layout_marginStart="2dp"
+                                android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/spiner_background"
+                            android:padding="3dp"
+                            android:layoutDirection="rtl">
+
+                        <RelativeLayout
+                                android:id="@+id/rlAddPassengerss"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                            <EditText
+                                    android:id="@+id/edtEnterNamePassenges"
+                                    android:layout_width="280dp"
+                                    android:hint="@string/hint"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"/>
+
+                            <ImageView
+                                    android:id="@+id/imgAdd"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_add"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rv_passengers"
+                                android:layout_marginBottom="2dp"
+                                android:layout_below="@id/rlAddPassengerss">
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerViewAddPassengers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_marginTop="7dp"-->
+                            <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="دلیل سفر"-->
+                                <!--android:layout_marginTop="3dp"-->
+                                <!--android:layout_marginStart="7dp"-->
+                                <!--android:textColor="@color/colorsecondarytext"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:textStyle="bold"/>-->
+                        <!--<ImageView-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:id="@+id/ivWarningTripReason"-->
+                                <!--android:src="@drawable/ic_warning"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:layout_marginEnd="5dp"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_height="20dp"/>-->
+                    <!--</RelativeLayout>-->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="match_parent">
+
+                        <LinearLayout android:layout_width="20dp"
+                                      android:layout_marginTop="3dp"
+                                      android:layout_height="20dp">
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/ivWarningTripReason"
+                                    android:src="@drawable/ic_warning"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="دلیل سفر"
+                                    android:textColor="@color/colorsecondarytext"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/spiner_background"
+                            android:padding="3dp"
+                            android:layoutDirection="rtl">
+
+                        <Spinner
+                                android:id="@+id/spinnerReason"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                            <requestFocus/>
+                        </Spinner>
+                    </RelativeLayout>
+
+
+                    <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_marginTop="7dp"-->
+                            <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="اهمیت سفر"-->
+                                <!--android:layout_marginTop="3dp"-->
+                                <!--android:layout_marginStart="7dp"-->
+                                <!--android:textColor="@color/colorsecondarytext"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:textStyle="bold"/>-->
+                        <!--<ImageView-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:id="@+id/ivWarningTripImportance"-->
+                                <!--android:src="@drawable/ic_warning"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:layout_marginEnd="5dp"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_height="20dp"/>-->
+                    <!--</RelativeLayout>-->
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="match_parent">
+
+                        <LinearLayout android:layout_width="20dp"
+                                      android:layout_marginTop="3dp"
+                                      android:layout_height="20dp">
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/ivWarningTripImportance"
+                                    android:src="@drawable/ic_warning"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="اهمیت سفر"
+                                    android:textColor="@color/colorsecondarytext"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+
+                            android:background="@drawable/spiner_background"
+                            android:padding="3dp"
+                            android:layoutDirection="rtl">
+
+                        <Spinner
+                                android:id="@+id/spinnerImportance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                            <requestFocus/>
+                        </Spinner>
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="match_parent">
+
+                        <LinearLayout android:layout_width="20dp"
+                                      android:layout_marginTop="3dp"
+                                      android:layout_height="20dp">
+                            <!--<ImageView-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:id="@+id/ivWarningCarType"-->
+                                    <!--android:src="@drawable/ic_warning"-->
+                                    <!--android:layout_alignParentLeft="true"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_alignParentTop="true"/>-->
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="نوع خودرو"
+                                    android:textColor="@color/colorsecondarytext"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/spiner_background"
+                            android:padding="3dp"
+                            android:layoutDirection="rtl">
+
+                        <Spinner
+                                android:id="@+id/spinnerCarType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+                            <requestFocus/>
+                        </Spinner>
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="21dp"
+                            android:gravity="center_vertical"
+                            android:id="@+id/text7"
+                            android:layout_marginTop="7dp"
+                            android:textSize="16sp"
+                            android:text="تاریخ مد نظر"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spiner_background"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+
+                        <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtDateRegisterTrip"
+                                android:drawableLeft="@drawable/ic_calander"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:paddingEnd="10dp"
+                                android:layout_marginTop="12dp"
+                                android:textColor="#000"
+                                android:inputType="date"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text=""
+                                android:layout_alignParentBottom="true"
+                        />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="ساعت مد نظر"
+                                android:layout_marginStart="21dp"
+                                android:textColor="@color/colorsecondarytext"
+                                android:textSize="16sp"
+                                android:layout_marginTop="7dp"
+                                android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="time"
+                                  android:layout_toRightOf="@+id/ivWarningTrip"
+                                  android:gravity="center"
+                                  android:layout_marginEnd="50dp"
+                                  android:visibility="gone"
+                                  android:textColor="#000"
+                                  android:id="@+id/txtTimePicker"/>
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:id="@+id/ivWarningTrip"
+                                android:src="@drawable/ic_warning"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:visibility="gone"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="20dp"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/spiner_background"
+                            android:gravity="center"
+                            android:layoutDirection="ltr">
+
+                        <!--<TimePicker-->
+                                <!--android:id="@+id/timePickerAddTrip"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="140dp"-->
+                                <!--android:layout_marginEnd="10dp"-->
+                                <!--android:layout_marginStart="10dp"-->
+                                <!--android:timePickerMode="spinner"-->
+                                <!--android:layout_alignParentTop="true"/>-->
+
+                        <NumberPicker
+                                android:id="@+id/npHour"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true">
+
+                        </NumberPicker>
+
+
+                        <RelativeLayout
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/space"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/npHour">
+
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text=":"/>
+
+                        </RelativeLayout>
+
+                        <NumberPicker
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/space"
+                                android:id="@+id/npMin">
+                        </NumberPicker>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/spiner_background"
+                            android:gravity="center_vertical">
+
+                        <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/chkBxAvailable"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="2dp"
+                                android:focusable="true"
+                                android:text="در اختیار"/>
+                        <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="دارای برگشت"
+                                android:id="@+id/chkBxReturn"
+                                android:focusable="true"
+                                android:layout_centerHorizontal="true"/>
+
+                        <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ماموریتی"
+                                android:id="@+id/chkBxMissionary"
+                                android:focusable="true"
+                                android:layout_marginEnd="5dp"
+                                android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+
+
+
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="21dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp"
+                            android:textSize="16sp"
+                            android:text="توضیحات"/>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="@drawable/spiner_background"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+
+                        <EditText
+                                android:id="@+id/edtCommentAddTrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:inputType="textMultiLine"
+                                android:minLines="5"
+                                android:textSize="16sp"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:padding="5dp"/>
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                            android:id="@+id/rlButtons"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="wrap_content">
+                        <Button
+                                android:id="@+id/btnRegisterTrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/bg_button"
+                                android:drawablePadding="-24dp"
+                                android:foreground="?selectableItemBackground"
+                                android:text="ثبت سفر"
+                                android:textColor="#fff"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                        <ProgressBar
+                                android:id="@+id/pbRegisterTrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:visibility="gone"
+                                android:indeterminateTint="#fff"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/bg_button"
+                                android:drawablePadding="-24dp"/>
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!--<RelativeLayout-->
+                    <!--android:id="@+id/rlButtons"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_height="wrap_content">-->
+                <!--<Button-->
+                        <!--android:id="@+id/btnRegisterTrip"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_marginEnd="15dp"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:background="@drawable/bg_button"-->
+                        <!--android:drawablePadding="-24dp"-->
+                        <!--android:foreground="?selectableItemBackground"-->
+                        <!--android:text="ثبت سفر"-->
+                        <!--android:textColor="#fff"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:textStyle="bold"/>-->
+
+                <!--<ProgressBar-->
+                        <!--android:id="@+id/pbRegisterTrip"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:indeterminateTint="#fff"-->
+                        <!--android:layout_marginEnd="15dp"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:background="@drawable/bg_button"-->
+                        <!--android:drawablePadding="-24dp"/>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:background="@color/colorBlack" />-->
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgAboutUs"
+            android:src="@drawable/bg_splash_invert"/>
+
+    <RelativeLayout
+            android:id="@+id/rlAppInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/nasr_logo"/>
+
+        <TextView
+                android:id="@+id/tvCoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivIcon"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/brand"
+                android:textColor="@color/colorTextLight"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvAppVersion"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tvAppName"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:textColor="@color/colorTextLight"-->
+        <!--android:textSize="12sp" />-->
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivBrand"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_above="@+id/tvBrand"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/ic_brand_black" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvBrand"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@id/tvAppContent"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="35dp"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/brand"-->
+    <!--android:textColor="@color/colorTextDark"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvAppContent"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginStart="25dp"-->
+    <!--android:layout_marginEnd="25dp"-->
+    <!--android:layout_below="@+id/imgAboutUs"-->
+    <!--android:lineSpacingExtra="5sp"-->
+    <!--android:text="@string/app_about_us"-->
+    <!--android:textColor="@color/colorText"-->
+    <!--android:textSize="14sp"/>-->
+
+
+    <com.codesgood.views.JustifiedTextView
+            android:id="@+id/tvAppContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/imgAboutUs"
+            android:layout_marginEnd="30dp"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/app_about_us"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_below="@+id/tvAppContent"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/app_copy_right"
+            android:textColor="@color/colorText"
+            android:textSize="14sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:id="@+id/tvCoUrl"
+                android:layout_alignParentBottom="true"
+                android:text="@string/CoUrl"/>
+
+</RelativeLayout>
